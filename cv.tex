@@ -1,0 +1,328 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{array}
+\usepackage{fontspec}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{xcoffins}
+
+\geometry{margin=0.6in}
+\NewCoffin\tablecoffin
+\NewDocumentCommand\Vcentre{m}
+{
+	\SetHorizontalCoffin\tablecoffin{#1}
+	\TypesetCoffin\tablecoffin[l,vc]
+}
+\newcolumntype{M}[1]{>{\arraybackslash}m{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\pagenumbering{gobble}
+\setmainfont{Calibri}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\begin{document}
+
+\par{\centering {\huge Gustavo Sena Mafra}\bigskip\par}
+
+\vspace{0.3cm}
+
+	\begin{table}[h]
+	\centering
+	\begin{tabular}{ r l }	
+		\Vcentre{\includegraphics[height=0.4cm]{img/loc_bw.png}}	& \Vcentre{Servidão Miguel José Vieira, 365, Rio Tavares, Florianópolis, SC, Brasil} \\
+		\Vcentre{\includegraphics[height=0.4cm]{img/tel_bw.png}}	& \Vcentre{+55 (48) 9601 8198} \\ 
+		\Vcentre{\includegraphics[height=0.4cm]{img/mail_bw.png}}	& \Vcentre{gsenamafra@gmail.com} \\ 
+	\end{tabular}
+	\end{table}
+
+\vspace{0.5cm}
+
+\section{Experience}
+
+\vspace{0.5cm}
+
+	\begin{tabular}{p{3cm}|p{13.5cm}}
+	
+		\begin{tabular}{r}
+			\textsc{July 2016}
+			\\
+			\textsc{September 2015}
+		\end{tabular}
+		&
+		\begin{tabular}{p{13cm}}
+			\textsc{\textbf{Scientific initiation}}
+			\\
+			\begin{tabular}{p{0.2cm} p{4cm} p{0.2cm} p{6cm}}
+				\Vcentre{\includegraphics[height=0.4cm]{img/comp.png}}
+				&
+				\begin{tabular}{p{3cm}}
+					\Vcentre{\textsc{DAS (UFSC)}}
+				\end{tabular}
+				&
+				\Vcentre{\includegraphics[height=0.4cm]{img/loc_bw.png}}
+				&
+				\begin{tabular}{p{4cm}}
+					\Vcentre{Florianópolis, Brazil}
+				\end{tabular}
+			\end{tabular}
+			\vspace{0.18cm}
+			\\
+			Research on sparse representation of electroencephalogram (EEG) signals applied to motor imagery brain-computer interface (BCI) systems. Application of statistical models such as Common Spatial Patterns (CSP), Linear Discriminant Analysis (LDA) and Support Vector Machines (SVM). Programming in Python.
+			
+		\end{tabular}
+		\\
+		\multicolumn{2}{c}{}
+		\\
+		\begin{tabular}{r}
+			\textsc{September 2015}
+			\\
+			\textsc{March 2015}
+		\end{tabular}
+		&
+		\begin{tabular}{p{13cm}}
+			\textsc{\textbf{End of studies internship}}
+			\\
+			\begin{tabular}{p{0.2cm} p{4cm} p{0.2cm} p{6cm}}
+				\Vcentre{\includegraphics[height=0.4cm]{img/comp.png}}
+				&
+				\begin{tabular}{p{3cm}}
+					\Vcentre{\textsc{Technicolor}}
+				\end{tabular}
+				&
+				\Vcentre{\includegraphics[height=0.4cm]{img/loc_bw.png}}
+				&
+				\begin{tabular}{p{4cm}}
+					\Vcentre{Césson-Sevigné, France}
+				\end{tabular}
+			\end{tabular}
+			\vspace{0.18cm}
+			\\
+			Machine learning for acoustic scene recognition. Research focused on deep learning models, audio classification systems and hyperparameter optimization. Algorithms implemented in Python for fast GPGPU computing in a Linux server.
+			
+		\end{tabular}
+		\\
+		\multicolumn{2}{c}{}
+		\\
+		\begin{tabular}{r}
+			\textsc{March 2015}
+			\\
+			\textsc{\,\,\,\,\,October 2014}
+		\end{tabular}
+		&
+		\setlength\extrarowheight{3pt}
+		\begin{tabular}{p{13cm}}
+			\textsc{\textbf{Convention of industrial studies}}
+			\vspace{0.12cm}
+			\\
+			\begin{tabular}{p{0.2cm} p{4cm} p{0.2cm} p{6cm}}
+				\includegraphics[height=0.4cm]{img/comp.png}
+				&
+				\setlength\extrarowheight{0pt}
+				\begin{tabular}{p{3cm}}
+					\textsc{CGG}
+					\\
+					\textsc{Supélec}
+				\end{tabular}
+				&
+				\includegraphics[height=0.4cm]{img/loc_bw.png}
+				&
+				\setlength\extrarowheight{0pt}
+				\begin{tabular}{p{4cm}}
+					Massy, France
+					\\
+					Gif-sur-Yvette, France
+				\end{tabular}
+				\\
+			\end{tabular}
+			\\
+			Statistical approach to denoising and deghosting of geophysical data. Research focused on blind deconvolution and source separation, tests carried out with Matlab. Work proposed by the company, executed by a team of three students and supervised by professors of the school.
+			
+		\end{tabular}
+		\\
+		\multicolumn{2}{c}{}
+		\\
+		\begin{tabular}{r}
+			\textsc{September 2014}
+			\\
+			\textsc{July 2014}
+		\end{tabular}
+		&
+		\begin{tabular}{p{13cm}}
+			\textsc{\textbf{Summer internship}}
+			\\
+			\begin{tabular}{p{0.2cm} p{4cm} p{0.2cm} p{6cm}}
+				\Vcentre{\includegraphics[height=0.4cm]{img/comp.png}}
+				&
+				\begin{tabular}{p{3cm}}
+					\Vcentre{\textsc{Fogale Nanotech}}
+				\end{tabular}
+				&
+				\Vcentre{\includegraphics[height=0.4cm]{img/loc_bw.png}}
+				&
+				\begin{tabular}{p{4cm}}
+					\Vcentre{Nîmes, France}
+				\end{tabular}
+			\end{tabular}
+			\vspace{0.18cm}
+			\\
+			Study and implementation of various strategies of data association and multidimensional adaptive filtering applied to real-time tracking of multiple objects of variable number in a capacitive sensor. Proposed solution: Interactive Multiple Model (IMM) Kalman filter.
+			
+		\end{tabular}
+		\\
+		\multicolumn{2}{c}{}
+		\\
+		\begin{tabular}{r}
+			\textsc{July 2013}
+			\\
+			\textsc{September 2011}
+		\end{tabular}
+		&
+		\begin{tabular}{p{13cm}}
+			\textsc{\textbf{Scientific initiation}}
+			\\
+			\begin{tabular}{p{0.2cm} p{4cm} p{0.2cm} p{6cm}}
+				\Vcentre{\includegraphics[height=0.4cm]{img/comp.png}}
+				&
+				\begin{tabular}{p{3cm}}
+					\Vcentre{\textsc{LINSE (UFSC)}}
+				\end{tabular}
+				&
+				\Vcentre{\includegraphics[height=0.4cm]{img/loc_bw.png}}
+				&
+				\begin{tabular}{p{4cm}}
+					\Vcentre{Florianópolis, Brazil}
+				\end{tabular}
+			\end{tabular}
+			\vspace{0.18cm}
+			\\
+			Research and development with implementation and optimization of speech coding standards and other audio processing algorithms. Matlab simulations, coding in C, C++ and assembly language of a fixed-point digital signal processor (Blackfin) and manipulation of this DSP.
+			
+		\end{tabular}
+	\end{tabular}
+
+\section{Education}
+\vspace{0.4cm}
+
+	\begin{tabular}{p{3cm}|p{13.5cm}}
+		\begin{tabular}{r}
+			\textsc{March 2015}
+			\\
+			\textsc{\,\,\,\,\,October 2014}
+		\end{tabular}
+		&
+		\begin{tabular}{p{13cm}}
+			\textbf{Master's degree, \textsc{Signal and image processing}}
+			\\
+			\vspace{0.00cm}
+			\includegraphics[height=0.4cm]{img/uni-1.png}
+			\textit{Université Paris-Sud}, Supélec, ENS Cachan
+			\vspace{0.18cm}
+			\\
+			Master research (M2R) ATSI (\textit{Automatique et traitement du signal et des images}). Degree accredited jointly by the three institutions.
+		\end{tabular}
+		\\
+		\multicolumn{2}{c}{}
+		\\
+		\begin{tabular}{r}
+			\textsc{March 2015}
+			\\
+			\textsc{September 2013}
+		\end{tabular}&
+		\begin{tabular}{p{13cm}}
+			\textbf{Engineer's Degree, \textsc{Applied mathematics}}
+			\\
+			\vspace{0.00cm}
+			\includegraphics[height=0.4cm]{img/uni-1.png}
+			Supélec (\textit{École supérieure d'életricité})
+			\vspace{0.18cm}
+			\\
+			Admitted under a double degree agreement between UFSC and Supélec to attend the second and third year of the engineering curriculum. Chosen specialization: MATIS (\textit{Mathématiques appliquées au traitement de l'information et du signal}).
+		\end{tabular}
+		\\
+		\multicolumn{2}{c}{}
+		\\
+		\begin{tabular}{r}
+			\textsc{September 2016}
+			\\
+			\textsc{August 2010}
+		\end{tabular}&
+		\begin{tabular}{p{13cm}}
+			\textbf{Engineer's Degree, \textsc{Control and automation}}
+			\\
+			\vspace{0.00cm}
+			\includegraphics[height=0.4cm]{img/uni-1.png}
+			UFSC (\textit{Universidade Federal de Santa Catarina})
+			\vspace{0.18cm}
+			\\
+			Total coursework of 5 years with emphasis on control systems, automation, embedded systems and computing. Paused between 2013 and 2015 for integrating Supélec.
+		\end{tabular}
+	\end{tabular}
+	
+	
+\section{Languages}
+\vspace{0.3cm}
+
+	\begin{tabular}
+		{>	{
+		\raggedright
+		\centering
+		}	p{4cm}
+			p{12.7cm}
+		}
+		
+	\textsc{Portuguese}		&	Native
+	\\[0.3\baselineskip]
+	\textsc{English}		&	Fluent (TOEFL iBT: 103/120)
+	\\[0.3\baselineskip]
+	\textsc{French}			&	Fluent
+	\\[0.3\baselineskip]
+	\textsc{Spanish}		&	Basic
+	\\
+	\end{tabular}
+
+\section{Technologies}
+\vspace{0.0cm}
+
+	\setlength\extrarowheight{7pt}
+	\begin{tabular}{>	{	\arraybackslash
+							\raggedright
+							\centering
+							}	m{4cm}
+				 	>	{	\arraybackslash
+				 			}	m{12.2cm}
+				 				}
+
+	\textsc{Scientific computing}
+			&	Matlab/Simulink, Octave, Python (Numpy, Pandas, Theano, Matplotlib, Scikit-learn, Keras), basic R.
+	\\
+	\textsc{Object-oriented programming}
+			&	Java, C++, Unified Modeling Language (UML).
+	\\
+	\textsc{Low-level programming and embedded systems}
+			&	C (MSVC), assembly (Blackfin, MIPS, 8085).
+	\\
+	\textsc{Development (miscellaneuos)}
+			&	Basic knowledge in functional programming (Scheme Lisp), hardware description (VHDL), markup languages (HTML), SQL (Postgres) and NoSQL (Neo4j) databases. Experience with version control systems (Git, SVN).
+	\\
+	\textsc{Operational systems}
+			&	Development experience with Windows and Linux (Ubuntu, Fedora), basic command-line interfacing (Bash, Shell scripting).
+	\\
+	\textsc{Document edition and presentation}
+			&	Microsoft Office (Word, Excel, PowerPoint), LaTeX.
+	\\
+	
+	\end{tabular}
+	
+	
+\section{Publications}
+\vspace{0.0cm}
+
+	\begin{tabular}{p{0.2cm} p{16cm}}
+		1. & \textsc{Acoustic scene classification: an evaluation of an extremely compact feature representation.}
+		\\
+		& Proceedings of the Detection and Classification of Acoustic Scenes and Events 2016 Workshop (DCASE2016).
+	\end{tabular}
+
+\end{document}
