@@ -2,7 +2,7 @@ Resume in English with two pages
 
 ---
 
-Compile with Docker+XeLaTeX:
+Compile with Docker + XeTeX:
 
 1. Install Docker
 2. Run these commands:
@@ -14,7 +14,7 @@ docker run cv
 
 ---
 
-Compile with LaTeX:
+Compile with XeTeX:
 
-1. Install XeLaTeX
-2. Run xelatex cv.tex
+1. Install XeTeX (the Dockerfile can be useful if you're using Debian or Ubuntu)
+2. Run ```xelatex cv.tex```
