@@ -1,0 +1,35 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{array}
+\usepackage{fontspec}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{xcoffins}
+
+\geometry{margin=0.6in}
+\NewCoffin\tablecoffin
+\NewDocumentCommand\Vcentre{m}
+{
+    \SetHorizontalCoffin\tablecoffin{#1}
+    \TypesetCoffin\tablecoffin[l,vc]
+}
+\newcolumntype{C}[1]{>{\centering}m{#1}}
+\newcolumntype{M}[1]{>{\arraybackslash}m{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\pagenumbering{gobble}
+\setmainfont{Carlito}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{3pt}
+
+\begin{document}
+
+    \input{src/pt/header.tex}
+    \input{src/pt/experience.tex}
+    \input{src/pt/activities.tex}
+    \input{src/pt/education.tex}
+    \input{src/pt/languages.tex}
+    \input{src/pt/technologies.tex}
+
+\end{document}

@@ -17,4 +17,4 @@ docker run cv
 Compile with XeTeX:
 
 1. Install XeTeX (the Dockerfile can be useful if you're using Debian or Ubuntu)
-2. Run ```xelatex cv.tex```
+2. Run ```xelatex -output-directory=output src/cv.tex```
