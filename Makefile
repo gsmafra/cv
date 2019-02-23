@@ -3,9 +3,10 @@ docker:
 	docker run cv
 
 local:
-	xelatex -output-directory=output src/cv.tex
+	xelatex -output-directory=output src/en/cv_en.tex
+	xelatex -output-directory=output src/en/cv_pt.tex
 
-clear:
-	rm cv.aux
-	rm cv.log
-	rm texput.log
+clean:
+	rm -f nohup.out
+	rm -f output/*.aux
+	rm -f output/*.log
