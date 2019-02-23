@@ -10,6 +10,7 @@ local:
 	xelatex -output-directory=output src/en_2p/cv_en_2p.tex
 	xelatex -output-directory=output src/pt_2p/cv_pt_2p.tex
 	xelatex -output-directory=output src/en_1p/cv_en_1p.tex
+	xelatex -output-directory=output src/pt_1p/cv_pt_1p.tex
 
 clean:
 	rm -f nohup.out
