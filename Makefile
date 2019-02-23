@@ -4,7 +4,7 @@ docker:
 
 local:
 	xelatex -output-directory=output src/en/cv_en.tex
-	xelatex -output-directory=output src/en/cv_pt.tex
+	xelatex -output-directory=output src/pt/cv_pt.tex
 
 clean:
 	rm -f nohup.out
