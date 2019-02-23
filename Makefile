@@ -6,8 +6,10 @@ docker:
 	docker cp $$(docker ps -alq):/cv-master/output/cv_pt_2p.pdf output
 
 local:
-	xelatex -output-directory=output src/en/cv_en_2p.tex
-	xelatex -output-directory=output src/pt/cv_pt_2p.tex
+	mkdir -p output
+	xelatex -output-directory=output src/en_2p/cv_en_2p.tex
+	xelatex -output-directory=output src/pt_2p/cv_pt_2p.tex
+	xelatex -output-directory=output src/en_1p/cv_en_1p.tex
 
 clean:
 	rm -f nohup.out
